@@ -1,7 +1,8 @@
 I want to add
 
 [ ] The BareClient (https://github.com/VyperGroup/bare-client-v4) will be standardized
-[x] Load indicators to the bare meta: # of active connections and the ram usage. In the BareClient, you will be able to sort an array, in which backends will be tried first given these load indicators in a function.
+[x] Load indicators to the bare meta: # of active connections and the ram usage.
+[ ] In the BareClient, you will be able to sort an array, in which backends will be tried first given these load indicators in a function.
 [ ] Bare over WS
 [ ] Bare over WRTC
 [ ] EE2E using WASM-binded Rustls (https://github.com/rustls/rustls) and with ChaCha20Poly1305 (thanks Blumiere)
