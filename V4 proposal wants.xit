@@ -11,3 +11,9 @@ I want to add
 I want to change
 
 [x] Deprecate the language property in the bare meta
+
+I want to change - ProxyModel.md
+
+[ ] Discourage the use of parsers for interception, but still provide parsing libraries that can be used
+[ ] Specify new functionality of BareClient V4
+[ ] Explain more
