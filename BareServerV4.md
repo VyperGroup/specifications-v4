@@ -12,9 +12,21 @@ This is an extension of [V3](./BareServerV3.md).
 
 The `language` field should no longer be used. This is due to the realized possibility of multiple bare servers using the same language. The project.respository and project.version fields in the bare meta is sufficient enough for this purpose.
 
-### Bare Security
+## Bare Security
 
 If you want to secure your bare servers, set `isSecured` to true in the bare meta. And the bare servers should interpret this and listen
+
+## New protocol support (Bare over ...)
+
+These modes will still be compatible with older bare clients, since it would occur over another version and endpoint.
+
+### Bare over WebRTC
+
+TODO: ...
+
+### Bare over Websockets
+
+TODO: ...
 
 ## Bare Request Headers
 
@@ -23,5 +35,5 @@ If you want to secure your bare servers, set `isSecured` to true in the bare met
 
 ## Bare Response Headers
 
-- Access-Control-Allow-Origin: If X-Bare-Origin was provided, it will look in its records to find all of the proxy site instances that the bare server allows to use. If the domain matches, it would set Access-Control-Allow-Origin to the domain that is allowed. Otherwise it would be denied, and it will return "Deny". If bare security is disabled, it is set to "\*". Normally you would list multiple origins, but this would leak all your proxy site instances. Although you can ignore Access-Control-Allow-Origin on the server, nobody would want to make a proxy to proxy a bare server. That would require more bandwidth than a bare server would require, making it a horrible idea for leechers, In my bare servers, I will provide syncing with Dispenser for this.
+- Access-Control-Allow-Origin: If X-Bare-Origin was provided, it will look in its records to find all of the proxy site instances that the bare server allows to use. If the domain matches, it would set Access-Control-Allow-Origin to the domain that is allowed. Otherwise it would be denied, and it will return "Deny". If bare security is disabled, it is set to "\*". Normally you would list multiple origins, but this would leak all your proxy site instances. In my bare servers, I will provide syncing with Dispenser for this.
 - TODO: ...
