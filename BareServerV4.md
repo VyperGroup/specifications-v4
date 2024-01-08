@@ -6,7 +6,13 @@ The endpoint `/` on v4 would be `/v4/`
 
 This is an extension of [V3](./BareServerV3.md).
 
-## Bare Security
+## Changes to the [bare meta](./BareServer.md#request-server-info)
+
+### Deprecating the language field
+
+The `language` field should no longer be used. This is due to the realized possibility of multiple bare servers using the same language. The project.respository and project.version fields in the bare meta is sufficient enough for this purpose.
+
+### Bare Security
 
 If you want to secure your bare servers, set `isSecured` to true in the bare meta. And the bare servers should interpret this and listen
 
