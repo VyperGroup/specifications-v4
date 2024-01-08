@@ -52,7 +52,8 @@ Response Body:
 
 ```json
 {
-  "versions": ["v1", "v2"],
+  "versions": ["v1", "v2", "v3", "v4"],
+  "isSecured": "true",
   "language": "NodeJS",
   "memoryUsage": 1.04,
   "maintainer": {
@@ -70,6 +71,8 @@ Response Body:
 }
 ```
 
+> View the [json schema](./bare-meta-schema.json), if you want to know it is typed.
+
 A ? after the property indicates it's optional.
 
 - maintainer {Object}?
@@ -85,6 +88,8 @@ A ? after the property indicates it's optional.
 - versions {Array{String}}: A list of version names this server supports. (resolvable to http://server/versionName/)
 - language {String{NodeJS,Deno,Bun,ServiceWorker,Java,PHP,Rust,C,C++,C#,Ruby,Go,Crystal,Shell}}: The runtime. "language" is kept for legacy purposes.
 - memoryUsage {Number}?: The memory used by the server in base MB.
+
+> TODO: Instead of providing this provide types inside of the repo
 
 In NodeJS, memoryUsage should be calculated by:
 
