@@ -14,6 +14,8 @@ Creating specifications allows for productivity. One developer can implement the
 
 [Bare Server](./BareServer.md)
 
+[Bare Client](./BareClient.md)
+
 [Proxy Model](./ProxyModel.md)
 
 [WebSocket Protocol](./WebSocketProtocol.md)
