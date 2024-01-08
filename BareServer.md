@@ -55,7 +55,10 @@ Response Body:
   "versions": ["v1", "v2", "v3", "v4"],
   "isSecured": "true",
   "language": "NodeJS",
-  "memoryUsage": 1.04,
+  "loadIndicators": {
+    "memoryUsage": "1.04 / 8.01",
+    "#activeConns": "9000"
+  },
   "maintainer": {
     "email": "maintenance@example.org",
     "website": "https://projects.example.org/"
