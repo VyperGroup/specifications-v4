@@ -1,9 +1,9 @@
 I want to add
 
 [ ] The BareClient (https://github.com/VyperGroup/bare-client-v4) will be standardized
-[x] Load indicators to the bare meta: # of active connections and the ram usage.
+[x] Add more load indicators to the bare meta: # of active connections and.
 [ ] In the BareClient, you will be able to sort an array, in which backends will be tried first given these load indicators in a function.
-[ ] Bare over WS. This is for faster speeds before QUIC is supported in major browsers.
+[ ] Bare over WS. This is for faster speeds before QUIC is supported in major browsers. This will be an optional feature.
 [x] Bare security. This allows for bare hosters to ensure there is minimal leeching.
 
 I want to change
@@ -15,3 +15,7 @@ I want to change - ProxyModel.md
 [ ] Discourage the use of parsers for interception, but still provide parsing libraries that can be used
 [ ] Specify new functionality of BareClient V4
 [ ] Explain more for making proxies
+
+I want to change - Not really a part of this repo
+
+[ ] Fork bare-server-node and make bare-server-js, where it supports the basic JS Request and Response. This would be useful for all JS runtimes (node with a bit of polyfilling). bare-server-js won't support versions other than V4, so it's easier to maintain. Ever since BareClient became a thing, there is no need for backwards compatibility.
