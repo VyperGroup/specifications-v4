@@ -27,9 +27,34 @@ BareClient(..., loadHandler: loadHandler);
 
 ## Standardized
 
-## Bare Client that supports TCP over websockets
+## A Bare Client that supports HTTP over Websockets
 
-TODO: ...
+This is an optional specification that allows faster than HTTP proxying. It is meant to be used, if QUIC isn't supported.
+This requires this to be added to your bare meta
+
+```json
+{
+  "supportedSpecifications": [
+    {
+      "by": "TompHTTP",
+      "name": "HTTP over WS",
+      "endpoint": "..."
+    },
+    ...
+  ],
+  ...
+}
+```
+
+### Implementation
+
+1. Converts the JS request in the BareClient to be a HTTP request
+2. Send the HTTP request through WS
+3. Proxy the HTTP request on the server and wait for a raw HTTP response back
+4. Send the HTTP response back to the BareClient through WS
+5. The BareClient converts it back to a JS response
+
+Ideally this will happen in one WS channel, to prevent to slow-down of switching protocols and spawning new connections. Similar to TCP, the request and the corresponding response will be numbered for this.
 
 ## Non-standardized implementations
 
