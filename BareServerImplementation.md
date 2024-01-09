@@ -1,4 +1,4 @@
-# Bare Server V4
+# Bare Server Revamped
 
 ## Bare Server V3 Endpoints
 

@@ -53,7 +53,7 @@ Response Body:
 ```json
 {
   "reassignEndpoint": {
-    "proxy", "current" /* Instead of requesting /bare/v4 you request /bare/current */
+    "proxy", "current" /* Instead of requesting /bare/proxy you request /bare/current */
   },
   "supportedSpecifications": [
     {
