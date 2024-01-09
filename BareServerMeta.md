@@ -52,14 +52,14 @@ Response Body:
 
 ```json
 {
-  "reroute": {
-    "v4", "current" /* Instead of requesting /bare/v4 you request /bare/current */
+  "reassignEndpoint": {
+    "proxy", "current" /* Instead of requesting /bare/v4 you request /bare/current */
   },
   "supportedSpecifications": [
     {
       by: "TompHTTP",
       name: "HTTP over WS",
-      route: "http-over-ws"
+      endpoint: "http-over-ws"
     }
   ],
   "isSecured": "true",

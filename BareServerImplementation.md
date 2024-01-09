@@ -2,23 +2,19 @@
 
 ## Bare Server V3 Endpoints
 
-All endpoints are prefixed with `/v{version}/`
-
-The endpoint `/` on v4 would be `/v4/`
-
-There will be an optional endpoint
-
-- `/http-over-ws`
-
 - This is an extension of [V3](./BareServerV3.md).
 
 ### Routable endpoints
 
 You will be able to change where the endpoints are.
 
-If you want to reroute the standard endpoints you can add an extra field inside of your bare meta called reroute
+If you want to reroute the standard endpoints, you can add an extra field inside of your bare meta called reroute. Reroute will be an object with the key signifiying the endpoint to replace and the new endpoint being the value.
 
 ## Changes to the [bare meta](./BareServer.md#request-server-info)
+
+### Deprecating the versions field
+
+There will only be one default endpoint. It will be "proxy".
 
 ### Deprecating the language field
 
