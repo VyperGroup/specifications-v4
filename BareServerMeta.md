@@ -9,13 +9,13 @@ Bare Servers can run on directories. For example, if the directory was `/bare/` 
 - [V2 Endpoints](./BareServerV2.md)
 - [V3 Endpoints](./BareServerV3.md)
 
-# Considerations when running an implementation under NGINX, Apache2, or Lighttpd
+## Considerations when running an implementation under NGINX, Apache2, or Lighttpd
 
 Due to the nature of header values being large, you must configure your web server to allow these large headers.
 
 NGINX:
 
-```
+```nginx
 server {
 	# ...
 	# Upgrade WebSockets
