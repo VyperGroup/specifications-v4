@@ -1,10 +1,8 @@
 # Bare Server Revamped
 
-## Bare Server V3 Endpoints
+This is an extension of [V3](./BareServerV3.md). TODO: Link to the old repo instead.
 
-- This is an extension of [V3](./BareServerV3.md).
-
-### Routable endpoints
+## Routable endpoints
 
 You will be able to change where the endpoints are.
 
