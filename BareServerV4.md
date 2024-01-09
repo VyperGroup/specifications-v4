@@ -4,7 +4,11 @@ All endpoints are prefixed with `/v{version}/`
 
 The endpoint `/` on v4 would be `/v4/`
 
-This is an extension of [V3](./BareServerV3.md).
+The new endpoints are
+
+- `/http-over-ws`
+
+- This is an extension of [V3](./BareServerV3.md).
 
 ## Changes to the [bare meta](./BareServer.md#request-server-info)
 
@@ -19,10 +23,6 @@ If you want to secure your bare servers, set `isSecured` to true in the bare met
 ## New protocol support (Bare over ...)
 
 These modes will still be compatible with older bare clients, since it would occur over another version and endpoint.
-
-### Bare over WebRTC
-
-TODO: ...
 
 ### Bare over Websockets
 
