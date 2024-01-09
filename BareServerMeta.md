@@ -52,7 +52,6 @@ Response Body:
 
 ```json
 {
-  "versions": ["v1", "v2", "v3", "v4"],
   "reroute": {
     "v4", "current" /* Instead of requesting /bare/v4 you request /bare/current */
   },
