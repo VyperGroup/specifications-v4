@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "reassignEndpoints": {
+      "type": "object",
+      "properties": {
+        "proxy": {
+          "type": "string"
+        },
+        "current": {
+          "type": "string"
+        }
+      }
+    },
+    "reassignHeaders": {
+      "type": "object",
+      "properties": {
+        "x-bare-url": {
+          "type": "string"
+        }
+      }
+    },
+    "reassign": {
+      "type": "object",
+      "properties": {
+        "endpoints": {
+          "type": "object",
+          "properties": {
+            "proxy": {
+              "type": "string"
+            },
+            "current": {
+              "type": "string"
+            }
+          }
+        },
+        "headers": {
+          "type": "object",
+          "properties": {
+            "x-bare-url": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "supportedSpecifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "by": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "endpoint": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "isSecured": {
+      "type": "string"
+    },
+    "loadIndicators": {
+      "type": "object",
+      "properties": {
+        "memoryTotal": {
+          "type": "string"
+        },
+        "memoryFree": {
+          "type": "string"
+        },
+        "activeConns": {
+          "type": "string"
+        },
+        "latency": {
+          "type": "string"
+        }
+      }
+    },
+    "maintainer": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        }
+      }
+    },
+    "project": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "repository": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
