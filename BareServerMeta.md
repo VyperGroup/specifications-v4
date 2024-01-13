@@ -49,8 +49,13 @@ Response Body:
 
 ```json
 {
-  "reassignEndpoint": {
-    "proxy", "current" /* Instead of requesting /bare/proxy you request /bare/current */
+  "reassign": {
+    "endpoints": {
+      "proxy", "current" /* Instead of requesting /bare/proxy you request /bare/current */
+    },
+    "headers": {
+      "x-bare-url": "x-any-url"
+    }
   },
   "supportedSpecifications": [
     {
@@ -81,7 +86,7 @@ Response Body:
 }
 ```
 
-> View the [json schema](./bare-meta-schema.json), if you want to know it is typed.
+> View the [json schema](./types/schema.json.json), if you want to know it is typed.
 
 A ? after the property indicates it's optional.
 

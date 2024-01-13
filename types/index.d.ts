@@ -130,16 +130,6 @@ export module BareMetaTypes {
    */
   export interface Meta {
     /**
-     * Reassigned endpoints (see ReassignEndpoints for details).
-     */
-    reassignEndpoints: ReassignEndpoints;
-
-    /**
-     * Reassigned headers (see ReassignHeaders for details).
-     */
-    reassignHeaders: ReassignHeaders;
-
-    /**
      * Encapsulates both endpoint and header reassignments.
      */
     reassign: Reassign;
