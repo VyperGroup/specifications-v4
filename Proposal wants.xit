@@ -1,10 +1,18 @@
 I want to add
 
-[ ] The BareClient (https://github.com/VyperGroup/bare-client-revamped) will be standardized
-[x] Add more load indicators to the bare meta: # of active connections and.
+[x] Add more load indicators to the bare meta
 [ ] In the BareClient, you will be able to sort an array, in which backends will be tried first given these load indicators in a function.
 [ ] Bare over WS. This is for faster speeds before QUIC is supported in major browsers. This will be an optional feature.
-[x] Bare security. This allows for bare hosters to ensure there is minimal leeching.
+[x] Bare security. This allows for bare hosters to ensure there is minimal leeching.'
+
+Standardize the BareClient
+
+[ ] The BareClient (https://github.com/VyperGroup/bare-client-revamped) will be standardized
+
+Typings
+
+[x] Provide TS types for the bare meta and the BareClient options
+[x] Provide a JSON schema for the bare meta
 
 I want to change
 
@@ -18,4 +26,5 @@ I want to change - ProxyModel.md
 
 I want to change - Not really a part of this repo
 
-[ ] Fork bare-server-node and make bare-server-js, where it supports the basic JS Request and Response. This would be useful for all JS runtimes (node with a bit of polyfilling). bare-server-js won't support versions other than V4, so it's easier to maintain. Ever since BareClient became a thing, there is no need for backwards compatibility.
+[ ] Develop bare-server-rust, which will use Rust, Neko, and Axum. It will support WebTransports and will be the recommended bare server for self-hosted instances.
+[ ] Develop bare-server-js, where it supports the basic JS Request and Response. This would be useful for all JS runtimes (node with a bit of polyfilling). bare-server-js won't support versions other than V4, so it's easier to maintain. Ever since BareClient became a thing, there is no need for backwards compatibility. This will replace bare-server-node.
