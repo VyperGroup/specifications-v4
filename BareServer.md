@@ -4,7 +4,7 @@ The TompHTTP Bare Server is a server that will receive requests from a service w
 
 Bare Servers can run on directories. For example, if the directory was `/bare/` then the bare origin would look like `http://example.org/bare/`. The bare origin is passed to clients.
 
-- [Errors](./BareServerErrors.md)
+For error information, please refer to the Bare V3 docs.
 
 ## Considerations when running an implementation under NGINX, Apache2, or Lighttpd
 
@@ -37,7 +37,7 @@ server {
 | ------ | -------- |
 | `GET`  | /        |
 
-This endpoint is not subject to change. It will remain the same across versions.
+This endpoint is not subject to change. It will remain the same across versions. However, new endpoints can be created and version endpoints can be changed by an implementation.
 
 Response Headers:
 
