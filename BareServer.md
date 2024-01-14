@@ -33,9 +33,8 @@ A JSON response that confirms to the [schema](./types/schema.json), although not
 
 We recommend our official [Bare client package on NPM](https://www.npmjs.com/package/@tomphttp/bare-client). You may use this library in a variety of ways:
 
-- import/require via modular service workers, rollup, and webpack 👍
-- `<script>`/`importScripts()` 👍
-- Embed in your service worker... 👎
+- Import/require in modular service workers, rollup, and webpack
+- `<script>`/`importScripts()`
 
 We HIGHLY encourage you to make the Bare server URL configurable. If possible, allow the configuration to run logic in order to produce a Bare server URL.
 
