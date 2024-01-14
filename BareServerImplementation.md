@@ -38,16 +38,10 @@ If you want to secure your bare servers, set `isSecured` to true in the bare met
 
 These modes will still be compatible with older bare clients, since it would occur over another version and endpoint.
 
-### Bare over Websockets
-
-TODO: ...
-
 ## Bare Request Headers
 
 - X-Bare-Origin: The origin that the SW is registered on. This is ignored, when bare security is disabled.
-- TODO: ...
 
 ## Bare Response Headers
 
 - Access-Control-Allow-Origin: If X-Bare-Origin was provided, it will look in its records to find all of the proxy site instances that the bare server allows to use. If the domain matches, it would set Access-Control-Allow-Origin to the domain that is allowed. Otherwise it would be denied, and it will return "Deny". If bare security is disabled, it is set to "\*". Normally you would list multiple origins, but this would leak all your proxy site instances. In my bare servers, I will provide syncing with Dispenser for this.
-- TODO: ...
