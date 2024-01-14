@@ -22,8 +22,6 @@ Each character in a string is iterated over. If the character begins with `%` th
 
 ## WebSocket Protocol Characters
 
-```
-!#$%&'*+-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ^_`abcdefghijklmnopqrstuvwxyz|~
-```
+`!#$%&'*+-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ^_\abcdefghijklmnopqrstuvwxyz|~`
 
 ASCII characters. 77 Total.
