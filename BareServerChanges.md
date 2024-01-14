@@ -1,10 +1,16 @@
-# Bare Server Revamped
+# Bare Server
 
-This is an extension of [V3](./BareServerV3.md). TODO: Link to the old repo instead.
+This extends [V3](TODO: Link to the old repo instead).
+
+## Changes to the [bare meta](BareServerForHosters.md#request-server-info)
+
+### Custom server specifications
+
+You are now able to define new endpoints that correspond to your own changes to the standard.
 
 ## Reassignability
 
-Reassignability can help with implementation special bare encoding to remedy automatic filter detection of bare servers. Although it's not foolproof without a proper EE2E implementation, that is up to the implementor of the bare server with their own custom server specifications.
+Reassignability can help with implementing to remedy automatic filter detection of bare servers. Although it's not foolproof without a proper EE2E implementation, that is up to the implementor of the bare server with their own custom server specifications. The specific properties involved are set on the `reassign`.
 
 ### endpoints
 
@@ -18,10 +24,6 @@ You will be able to change the keys of the headers
 
 If you want to reroute the standard header keys, you can add an extra field inside of your bare meta called `reassign.headers`. Reroute will be an object with the key signifiying the key to replace and the new key being the value.
 
-## Changes to the [bare meta](./BareServer.md#request-server-info)
-
-### Custom server specifications
-
 ### Deprecating the versions field
 
 There will only be one default endpoint. It will be "proxy".
@@ -32,7 +34,7 @@ The `language` field should no longer be used. This is due to the realized possi
 
 ## Bare Security
 
-If you want to secure your bare servers, set `isSecured` to true in the bare meta. And the bare servers should interpret this and listen
+If you want to secure your bare servers, set `isSecured` to true in the bare meta. And the bare servers should interpret this and listen.
 
 ## New protocol support (Bare over ...)
 
