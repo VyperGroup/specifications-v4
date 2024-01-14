@@ -1,0 +1,36 @@
+{
+  "reassign": {
+    "endpoints": {
+      "proxy": "current"
+    },
+    "headers": {
+      "x-bare-url": "x-any-url"
+    }
+  },
+  "supportedSpecifications": [
+    {
+      "by": "TompHTTP",
+      "name": "HTTP over WT",
+      "endpoint": "http-over-wt"
+    }
+  ],
+  "isSecured": "true",
+  "loadIndicators": {
+    "memoryTotal": "8010000",
+    "memoryFree": "6970000",
+    "activeConns": "9000",
+    "latency": "200ms"
+  },
+  "maintainer": {
+    "email": "maintenance@example.org",
+    "website": "https://projects.example.org/"
+  },
+  "project": {
+    "name": "Project",
+    "description": "Unique TOMP implementation",
+    "email": "development@example.org",
+    "website": "https://git.example.org/",
+    "repository": "https://git.example.org/dev/project.git",
+    "version": "1.0.0"
+  }
+}
