@@ -91,7 +91,7 @@ export module BareMetaTypes {
   }
 
   /**
-   * Information about the project itself.
+   * Information about the implementation itself.
    */
   export interface Project {
     /**
@@ -120,7 +120,14 @@ export module BareMetaTypes {
     repository: string;
 
     /**
+     * The short SHA-1 hash of the project's repository.
+     * @see https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection
+     */
+    commitHash: string;
+
+    /**
      * The current version of the project.
+     * Consider this an alternative to the `commitHash` property.
      */
     version: string;
   }

@@ -92,6 +92,9 @@
         "repository": {
           "type": "string"
         },
+        "commitHash": {
+          "type": "string"
+        }
         "version": {
           "type": "string"
         }

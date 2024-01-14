@@ -30,7 +30,7 @@ There will only be one default endpoint. It will be "proxy".
 
 ### Deprecating the language field
 
-The `language` field should no longer be used. This is due to the realized possibility of multiple bare servers using the same language. The project.respository and project.version fields in the bare meta is sufficient enough for this purpose.
+The `language` field should no longer be used. This is due to the realized possibility of multiple bare servers using the same language. The other project field in the bare meta are sufficient enough for this purpose.
 
 ## Bare Security
 
