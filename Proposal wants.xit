@@ -2,7 +2,7 @@ I want to add
 
 [x] Add more load indicators to the bare meta
 [ ] In the BareClient, you will be able to sort an array, in which backends will be tried first given these load indicators in a function.
-[ ] Bare over WS. This is for faster speeds before QUIC is supported in major browsers. This will be an optional feature.
+[ ] Bare over WS. This is for faster speeds before WebTransports are supported in major browsers. This will be an optional feature.
 [x] Bare security. This allows for bare hosters to ensure there is minimal leeching.'
 
 Standardize the BareClient
@@ -21,7 +21,7 @@ I want to change
 I want to change - ProxyModel.md
 
 [ ] Discourage the use of parsers for interception, but still provide parsing libraries that can be used
-[ ] Specify new functionality of BareClient Revamped
+[x] Specify new functionality of BareClient
 [ ] Explain more for making proxies
 
 I want to change - Not really a part of this repo
