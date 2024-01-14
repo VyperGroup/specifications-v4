@@ -10,6 +10,21 @@ function\* sortEndpoints(endpoint): BareClientTypes.SortEndpoints {
 }
 ```
 
+## Example class structure
+
+```ts
+class BareClient {
+  this.opts;
+  constructor(opts: BareClientOptions) {
+    this.opts = opts;
+  }
+  // Just like fetch
+  fetch(url: string, options: RequestOptions): Response {
+    ...
+  }
+}
+```
+
 ## Bare Client Mix-ins
 
 ## Standardized
