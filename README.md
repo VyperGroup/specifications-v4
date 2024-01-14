@@ -1,5 +1,7 @@
 # TOMPHTTP Specifications
 
+> Notice: Some of the documentation pages aren't finished yet including: BareServer
+
 ## What is TOMP?
 
 TOMP (acronym for Too Many Proxies) is an organization containing new standards and implementations for web proxies built on Service Workers.
@@ -18,10 +20,9 @@ That's fine! It should be easy to migrate to a different backend, because the Ba
 
 ## Listing
 
-- [Bare Server](BareServerImplementation.md)
-- [BareServer d](BareServerImplementation.md)
+- [Bare Server](./BareServerChanges.md)
 
-- [Bare Client](BareClient.md)
+- [Bare Client](./BareClient.md)
 
 - [Proxy Model](./ProxyModel.md)
 
