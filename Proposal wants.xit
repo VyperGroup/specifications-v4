@@ -7,7 +7,7 @@ I want to add
 
 Standardize the BareClient
 
-[ ] The BareClient (https://github.com/VyperGroup/bare-client-revamped) will be standardized
+[x] Standardize
 
 Typings
 
@@ -27,4 +27,3 @@ I want to change - ProxyModel.md
 I want to change - Not really a part of this repo
 
 [ ] Develop bare-server-rust, which will use Rust, Neko, and Axum. It will support WebTransports and will be the recommended bare server for self-hosted instances.
-[ ] Develop bare-server-js, where it supports the basic JS Request and Response. This would be useful for all JS runtimes (node with a bit of polyfilling). bare-server-js won't support versions other than V4, so it's easier to maintain. Ever since BareClient became a thing, there is no need for backwards compatibility. This will replace bare-server-node.

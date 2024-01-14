@@ -63,3 +63,8 @@ server {
 	# ...
 }
 ```
+
+### Future Ideas for you to try
+
+- A bare server in Go that uses [quic-go](https://pkg.go.dev/github.com/lucas-clemente/quic-go).
+- Develop bare-server-js, where it supports the basic JS Request and Response. This would encompass all JS runtimes, albiet node with a bit of polyfilling.
