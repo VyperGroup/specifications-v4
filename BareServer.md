@@ -6,6 +6,8 @@ Bare Servers can run on directories. For example, if the directory was `/bare/` 
 
 For error information, please refer to the Bare V3 docs.
 
+## Implementations
+
 ## Request server info
 
 | Method | Endpoint |
