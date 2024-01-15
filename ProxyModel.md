@@ -24,7 +24,7 @@ The Service worker will intercept requests from the client. The requests will ei
 
 The URL was encoded using `encodeURIComponent` for safety with various webservers such as NGINX, Heroku, Repl.it, etc... These services may replace `https://sys32.dev` with `https:/sys32.dev`, breaking the URL.
 
-The URL should contain fields that correspond to fields used when making a request to the Bare server:
+The URL should contain properties that correspond to properties used when making a request to the Bare server:
 
 - Host: `sys32.dev`
 - Port: `443`
@@ -41,23 +41,24 @@ const { scope } = registration;
 const splitURL = /^(js|css)\/(.*?)$/;
 
 async function onFetch(request) {
-	// isolate the content after /scope/ in the URL
-	const sliced = request.url.slice(scope);
-	// request.url = `http://localhost/scope/js/https%3A%2F%2Fsys32.dev%2F`
-	// sliced = `js/https%3A%2F%2Fsys32.dev%2F`
-	const [, service, url] = sliced.match(splitURL) || [];
+  // isolate the content after /scope/ in the URL
+  const sliced = request.url.slice(scope);
+  // request.url = `http://localhost/scope/js/https%3A%2F%2Fsys32.dev%2F`
+  // sliced = `js/https%3A%2F%2Fsys32.dev%2F`
+  const [, service, url] = sliced.match(splitURL) || [];
 
-	if (!service || !url) return new Response('Unknown URL', { status: 404 });
+  if (!service || !url) return new Response("Unknown URL", { status: 404 });
 
-	const decodedURL = new URL(decodeURIComponent(url));
+  const decodedURL = new URL(decodeURIComponent(url));
 
-	// Do logic according to service...
+  // Do logic according to service...
 }
 ```
 
 ### How it will look
 
 You should attempt to produce an identical website (CSS, HTML, JS) by leveraging rewriting scripts. We recommend the following libraries:
+
 - [parse5](https://www.npmjs.com/package/parse5)
 - [meriyah](https://www.npmjs.com/package/meriyah)
 - [acorn-loose](https://www.npmjs.com/package/acorn-loose)
@@ -87,6 +88,7 @@ Such as `fetch(url, opts)`, `XMLHttpRequest.prototype.open(method, url, ...etc)`
 JS apis will have their responses unrewritten, and may contain data that calling `res.text()` will result in being lost. Run logic to determine what to convert the response to.
 
 Example:
+
 - `/xhr/`: Don't touch the response. Use `new Response(res.body)` to produce a response with the body being piped. Loads `fetch()`, `XMLHttpRequest`, and images.
 - `/js/`: Covert to a string using `res.text()` then rewrite.
 - `/css/`: Covert to a string using `res.text()` then rewrite.
