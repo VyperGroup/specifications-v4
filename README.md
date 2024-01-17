@@ -1,6 +1,6 @@
-# TOMPHTTP Specifications
+# TOMPHTTP Specifications - V4 DRAFT
 
-> Notice: Some of the documentation pages aren't finished yet including: BareServer
+> Notice: Some of the documentation pages aren't finished yet. This repo is for the planned V4 update to the standard.
 
 ## What is TOMP?
 
@@ -20,9 +20,9 @@ That's fine! It should be easy to migrate to a different backend, because the Ba
 
 ## Listing
 
-- [Bare Server](./BareServerChanges.md)
+- [Bare Server](optional-specs/BareServerChanges.md)
 
-- [Bare Client](./BareClient.md)
+- [Bare Client](optional-specs/BareClient.md)
 
 - [Proxy Model](./ProxyModel.md)
 
