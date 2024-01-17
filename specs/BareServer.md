@@ -24,10 +24,10 @@ Content-Type: application/json
 
 Response Body:
 
-A JSON response that confirms to the [schema](./types/schema.json), although not all of the properties
+A JSON response that confirms to the [schema](../types/schema.json), although not all of the properties
 
 > View the [json schema](./types/schema.json.json), if you want to know it is typed.
-> In a TS projects you can interact with [these type modules](types/index.d.ts)
+> In a TS projects you can interact with [these type modules](../types/index.d.ts)
 
 ## For hosters
 

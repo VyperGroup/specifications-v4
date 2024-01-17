@@ -63,7 +63,7 @@ Ideally this will happen in one WS channel, to prevent to slow-down of switching
 - [Adrift](https://github.com/MercuryWorkshop/adrift) - P2P implementation using Websockets
 - [Middleware BareClient by Vyper Group](https://github.com/VyperGroup/aero/tree/Unstable/src/BareClientMixins/middleware)
 
-Mercury Workshop provides an [extendable version of the bare client](https://www.npmjs.com/package/@mercuryworkshop/bare-client-custom) that lets you freely implement your own specifications. It has been determined that features don't directly involve HTTP or use custom protocols to accomplish a task, should not be standardized and should be left to the bare server implementors to create their independent specifications.
+Mercury Workshop provides an [extendable version of the bare client](https://www.npmjs.com/package/@mercuryworkshop/bare-client-custom) that lets you freely implement your own specifications. It has been determined that features don't directly involve HTTP or use custom protocols to accomplish a task, should not be standardized and should be left to the bare server implementors to create their independent specifications. We will try to make this compatible with Bare V4's objectives.
 
 ### Future Ideas for you to try
 
