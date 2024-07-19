@@ -50,16 +50,16 @@
       "type": "object",
       "properties": {
         "memoryTotal": {
-          "type": "string"
+          "type": "number"
         },
         "memoryFree": {
-          "type": "string"
+          "type": "number"
         },
         "activeConns": {
-          "type": "string"
+          "type": "number"
         },
         "latency": {
-          "type": "string"
+          "type": "number"
         }
       }
     },

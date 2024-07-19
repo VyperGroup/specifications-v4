@@ -10,16 +10,16 @@
   "supportedSpecifications": [
     {
       "by": "TompHTTP",
-      "name": "Bare Extended",
+      "name": "bare-extended",
       "endpoint": "extended"
     }
   ],
   "isSecured": "true",
   "loadIndicators": {
-    "memoryTotal": "8010000",
-    "memoryFree": "6970000",
-    "activeConns": "9000",
-    "latency": "200ms"
+    "memoryTotal": 8010000,
+    "memoryFree": 970000,
+    "activeConns": 9000,
+    "latency": 200
   },
   "maintainer": {
     "email": "maintenance@example.org",

@@ -57,22 +57,22 @@ export module BareMetaTypes {
     /**
      * Total memory available (in kb).
      */
-    memoryTotal: string;
+    memoryTotal: number;
 
     /**
      * Free memory available (in kb).
      */
-    memoryFree: string;
+    memoryFree: number;
 
     /**
      * Number of active connections.
      */
-    activeConns: string;
+    activeConns: number;
 
     /**
      * Current system latency (in ms).
      */
-    latency: string;
+    latency: number;
   }
 
   /**
@@ -129,7 +129,7 @@ export module BareMetaTypes {
      * The current version of the project.
      * Consider this an alternative to the `commitHash` property.
      */
-    version: string;
+    version: number;
   }
 
   /**
