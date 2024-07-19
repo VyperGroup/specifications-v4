@@ -7,13 +7,7 @@
       "x-bare-url": "x-any-url"
     }
   },
-  "supportedSpecifications": [
-    {
-      "by": "TompHTTP",
-      "name": "HTTP over WT",
-      "endpoint": "http-over-wt"
-    }
-  ],
+  "supportedSpecifications": [],
   "isSecured": "true",
   "loadIndicators": {
     "memoryTotal": "8010000",
