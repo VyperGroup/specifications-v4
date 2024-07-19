@@ -22,13 +22,7 @@ That's fine! It should be easy to migrate to a different backend because the Bar
 
 - [Bare Client](https://github.com/MercuryWorkshop/bare-mux#bare-mux)
 
-- [WebSocket Protocol](./WebSocketProtocol.md)
-
-### Listing - Optional specs
-
-> These aren't finished
-
-- [Bare over WT](./specs/BareWT.md)
+- [WebSocket Protocol](specs/WebSocketProtocol.md)
 
 ## [List of implementations](https://github.com/tomphttp/implementations)
 
