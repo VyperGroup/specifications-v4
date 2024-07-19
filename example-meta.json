@@ -7,7 +7,13 @@
       "x-bare-url": "x-any-url"
     }
   },
-  "supportedSpecifications": [],
+  "supportedSpecifications": [
+    {
+      "by": "TompHTTP",
+      "name": "Bare Extended",
+      "endpoint": "extended"
+    }
+  ],
   "isSecured": "true",
   "loadIndicators": {
     "memoryTotal": "8010000",
